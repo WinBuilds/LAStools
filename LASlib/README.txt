@@ -16,8 +16,7 @@ a single bit being different (i.e. absolutely lossless compression).
 
 LASlib (with LASzip) is easy-to-use, light-weight, yet extremely fast. Just
 download it here and you are ready to go. For Windows users "laszip.exe" and
-other binary LAStools and a MSVC6.0 project environment are included. For
-Linux users there are simple Makefiles.
+other binary LAStools are included.
 
 The best way is get LASlib is to download LAStools, which contains the
 full LASlib (with LASzip) distribution:
@@ -60,7 +59,7 @@ int main(int argc, char *argv[])
 Many LAStools are "free" open source (LGPL). But some of the more powerful
 LAStools (i.e. for contour extraction, boundary polygon computation, TIN
 generation, DEM creation, thinning, clipping, tiling, sorting, ...) need
-a license for commercial and government use. 
+a license for commercial and government use.
 
 --------------------
 

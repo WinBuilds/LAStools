@@ -2280,8 +2280,8 @@ BOOL LASreadOpener::add_file_name(const CHAR* file_name, BOOL unique)
 {
   BOOL r = FALSE;
   HANDLE h;
-  WIN32_FIND_DATA info;
-  h = FindFirstFile(file_name, &info);
+  WIN32_FIND_DATAA info;
+  h = FindFirstFileA(file_name, &info);
   if (h != INVALID_HANDLE_VALUE)
   {
     // find the path
@@ -2296,14 +2296,14 @@ BOOL LASreadOpener::add_file_name(const CHAR* file_name, BOOL unique)
 	    {
         sprintf(&full_file_name[len], "%s", info.cFileName);
         if (add_file_name_single(full_file_name, unique)) r = TRUE;
-  	  } while (FindNextFile(h, &info));
+  	  } while (FindNextFileA(h, &info));
     }
     else
     {
       do
       {
         if (add_file_name_single(info.cFileName, unique)) r = TRUE;
-  	  } while (FindNextFile(h, &info));
+  	  } while (FindNextFileA(h, &info));
     }
 	  FindClose(h);
   }
@@ -2406,8 +2406,8 @@ BOOL LASreadOpener::add_neighbor_file_name(const CHAR* neighbor_file_name, BOOL 
 {
   BOOL r = FALSE;
   HANDLE h;
-  WIN32_FIND_DATA info;
-  h = FindFirstFile(neighbor_file_name, &info);
+  WIN32_FIND_DATAA info;
+  h = FindFirstFileA(neighbor_file_name, &info);
   if (h != INVALID_HANDLE_VALUE)
   {
     // find the path
@@ -2422,14 +2422,14 @@ BOOL LASreadOpener::add_neighbor_file_name(const CHAR* neighbor_file_name, BOOL 
 	    {
         sprintf(&full_neighbor_file_name[len], "%s", info.cFileName);
         if (add_neighbor_file_name_single(full_neighbor_file_name, unique)) r = TRUE;
-  	  } while (FindNextFile(h, &info));
+  	  } while (FindNextFileA(h, &info));
     }
     else
     {
       do
       {
         if (add_neighbor_file_name_single(info.cFileName, unique)) r = TRUE;
-  	  } while (FindNextFile(h, &info));
+  	  } while (FindNextFileA(h, &info));
     }
 	  FindClose(h);
   }

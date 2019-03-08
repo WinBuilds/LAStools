@@ -1878,7 +1878,7 @@ static FILE* open_geo_file(const char* program_name, bool pcs=true)
 #ifdef _WIN32
   if (program_name)
   {
-    GetModuleFileName(GetModuleHandle(program_name),(LPTSTR)path, MAX_GEO_PATH_LENGTH);
+    GetModuleFileName(GetModuleHandleA(program_name),(LPTSTR)path, MAX_GEO_PATH_LENGTH);
     path_len = (int)strlen(path);
   }
   else

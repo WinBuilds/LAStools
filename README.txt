@@ -31,20 +31,20 @@ closed source tools:
 * lasground.exe extracts the bare-earth by classifying all ground points
 * lasground_new.exe an improved version of lasground.exe for complex terrains
 * lasoverlap.exe checks overlap & vertical/horizontal alignment of flight lines
-* lascontrol.exe quality checks elevations for a list of control points 
+* lascontrol.exe quality checks elevations for a list of control points
 * lasclassify.exe finds buildings and the vegetation above the ground
-* lascolor.exe colors the LAS points based on ortho imagery in TIF format 
+* lascolor.exe colors the LAS points based on ortho imagery in TIF format
 * lasgrid.exe grids onto min/max/avg/std elevation, intensity, or counter rasters
 * lascanopy.exe computes many raster and plot metrics for forestry applications
 * lasboundary.exe extracts a boundary polygon that encloses the points
 * lasheight.exe computes for each point its height above the ground
 * lastrack.exe classifies LiDAR point based on distance from a trajectory
-* lasplanes.exe finds planar patches in terrestrial, mobile, (airborne?) scans 
+* lasplanes.exe finds planar patches in terrestrial, mobile, (airborne?) scans
 * lasclip.exe clips points against building footprints / swath boundaries
 * lastile.exe tiles huge amounts of LAS points into square tiles
 * lassplit.exe splits points of LAS file(s) into flightlines or other criteria
 * lassort.exe sorts points by gps_time, point_source, or into spatial proximity
-* lasduplicate.exe removes duplicate points (with identical x and y, z optional) 
+* lasduplicate.exe removes duplicate points (with identical x and y, z optional)
 * lasthin.exe thins lowest / highest / random LAS points via a grid
 * las2tin.exe triangulates the points of a LAS file into a TIN
 * las2dem.exe rasters (via a TIN) into elevation/slope/intensity/rgb DEMs
@@ -55,23 +55,13 @@ closed source tools:
 
 BLAST extension
 
-* blast2dem.exe rasters like las2dem but with streaming TINs for billions of points. 
-* blast2iso.exe contours like las2iso but with streaming TINs for billions of points. 
-
-For Windows all binaries are included. All open source tools can be compiled
-from the source code. For MSVC6.0 there is a project file. For Linux and MacOS
-the makefiles are included. Simply go into the root directory and run 'make':
-
-unzip LAStools.zip
-cd LAStools/
-make
-
-The compiled binary executables are or will be in the ./LAStools/bin directory.
+* blast2dem.exe rasters like las2dem but with streaming TINs for billions of points.
+* blast2iso.exe contours like las2iso but with streaming TINs for billions of points.
 
 ---
 
 Please read the "LICENSE.txt" file for information on the legal use and licensing
 of LAStools. I would also really like it if you would send me an email and tell me
-what you use LAStools for and what features and improvements you could need. 
+what you use LAStools for and what features and improvements you could need.
 
 (c) 2007-2015 martin.isenburg@rapidlasso.com - http://rapidlasso.com
