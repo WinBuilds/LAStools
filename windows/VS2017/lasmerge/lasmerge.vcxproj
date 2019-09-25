@@ -23,7 +23,7 @@
     <ProjectGuid>{F025F150-1D6E-42C5-B09D-AFAAA89DBD83}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>lasinfo</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

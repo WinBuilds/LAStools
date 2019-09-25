@@ -23,7 +23,7 @@
     <ProjectGuid>{DED6ED28-70E4-42C7-8C29-9BFA2B550252}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>txt2las</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
